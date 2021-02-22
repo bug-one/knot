@@ -8,7 +8,7 @@
     >
       <SideBar />
     </div>
-    <div class="main_wrap">
+    <div class="main_wrap" @click="()=>isActiveSidebar = false">
       <NavigationBar
         :sidebarState="isActiveSidebar"
         @switchSidebarState="switchSidebarState"

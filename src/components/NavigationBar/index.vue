@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="h5">
-      <i class="iconfont icongengduo" @click="()=>$emit('switchSidebarState',!sidebarState)"></i>
+      <i class="iconfont icongengduo" @click.stop="()=>$emit('switchSidebarState',!sidebarState)"></i>
       <img
         class="logo"
         src="https://iph.href.lu/50x50?text=LOGO&fg=000000&bg=efefef"
