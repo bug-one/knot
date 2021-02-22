@@ -16,6 +16,7 @@ export default {};
 #side_bar {
     overflow: hidden;
   .user {
+      width: 100px;
       text-align: center;
       margin: 10px 0;
     .avatar {
@@ -26,6 +27,7 @@ export default {};
     }
   }
   a {
+      width: 100px;
     display: block;
     text-align: center;
     white-space: nowrap;

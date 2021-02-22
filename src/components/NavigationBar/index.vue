@@ -40,6 +40,7 @@ export default {
 
 <style lang="less" scoped>
 #navigation_bar {
+  width: 100vw;
   height: 64px;
   background-color: #24292e;
   display: flex;
