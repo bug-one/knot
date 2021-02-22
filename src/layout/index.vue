@@ -6,7 +6,7 @@
         active: isActiveSidebar,
       }"
     >
-      <SideBar />
+      <SideBar @switchSidebarState="switchSidebarState"/>
     </div>
     <div class="main_wrap" @click="()=>isActiveSidebar = false">
       <NavigationBar
