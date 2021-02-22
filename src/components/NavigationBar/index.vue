@@ -40,6 +40,8 @@ export default {
 
 <style lang="less" scoped>
 #navigation_bar {
+  position: fixed;
+  top: 0;
   width: 100vw;
   height: 64px;
   background-color: #24292e;

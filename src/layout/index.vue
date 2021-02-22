@@ -3,10 +3,19 @@
     <div
       :class="{
         sidebar_wrap: true,
+        real:true,
         active: isActiveSidebar,
       }"
     >
       <SideBar @switchSidebarState="switchSidebarState"/>
+    </div>
+    <div
+      :class="{
+        sidebar_wrap: true,
+        active: isActiveSidebar,
+      }"
+    >
+    <SideBar @switchSidebarState="switchSidebarState"/>
     </div>
     <div class="main_wrap" @click="()=>isActiveSidebar = false">
       <NavigationBar
@@ -51,11 +60,17 @@ export default {
     &.active {
       width: 100px;
     }
+    &.real{
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
   }
   .main_wrap {
     width: 100%;
     overflow: hidden;
-    min-height: 100vh;
+    min-height: calc(100vh -64px);
+    padding-top: 64px;
   }
 }
 @media screen and (max-width: 539px) {
